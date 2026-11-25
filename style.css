@@ -1,0 +1,99 @@
+/* this makes the scroll smooth when we click on the navbar links */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eef0f5;
+}
+
+/* navbar stays at the top of the page */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  background-color: #2d6cdf;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* every section is as tall as the screen so the scroll can be seen */
+.section {
+  min-height: 100vh;
+  padding: 90px 20px 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.box {
+  width: 450px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input {
+  width: 65%;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 14px;
+  background-color: #2d6cdf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.deleteBtn {
+  background-color: red;
+}
+
+#emptyMsg {
+  color: gray;
+}
+
+#counter {
+  font-size: 36px;
+}

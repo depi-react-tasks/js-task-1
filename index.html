@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Task 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <h2 class="logo">JS Task</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#todo">To-Do</a></li>
+      <li><a href="#timers">Timers</a></li>
+    </ul>
+  </nav>
+
+  <!-- home section -->
+  <section id="home" class="section">
+    <h1>My JavaScript Task</h1>
+    <p>Click on the links in the navbar to scroll to each part.</p>
+  </section>
+
+  <!-- to do list section -->
+  <section id="todo" class="section">
+    <div class="box">
+      <h2>To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="Write a task...">
+      <button id="addBtn">Add</button>
+      <ul id="taskList"></ul>
+      <p id="emptyMsg">No tasks yet.</p>
+    </div>
+  </section>
+
+  <!-- timers section -->
+  <section id="timers" class="section">
+    <div class="box">
+      <h2>Timers</h2>
+
+      <h3>setInterval / clearInterval</h3>
+      <p id="counter">0 s</p>
+      <button id="startInterval">Start</button>
+      <button id="stopInterval">Stop</button>
+
+      <h3>setTimeout / clearTimeout</h3>
+      <p id="timeoutMsg">No timeout yet.</p>
+      <button id="startTimeout">Start Timeout</button>
+      <button id="stopTimeout">Cancel Timeout</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
